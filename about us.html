@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32周炫璋</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/about us.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/332180a33e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">魔術方塊<span>專賣店</span></a>
+        <ul class="navigation">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="3x3x3-product.html">3x3x3</a></li>
+            <li><a href="all-product.html">所有方塊</a></li>
+            <li><a id="active" href="about us.html">關於我們</a></li>
+        </ul>
+    </header>
+    <div class="container row1">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 p-0">
+                <img src="./img/alvaro-reyes-4eTnTQle0Ks-unsplash.jpg" class="img-fluid p-0 m-0" alt="">
+            </div>
+            <div class="col-lg-6 text-white pl-4">
+                <div class="aboutus">
+                    <h1>關於我們</h1>
+                </div>
+                <p>地址： 236新北市土城區學府路一段241號</p>
+                <p>電話： 02 2261 2483</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+            <section class="col-lg-6 text-white">
+                <div class="row">
+                    <div class="w-100 text-center mb-4 pl-5">
+                        <div class="h1about">
+                            <h1>聯絡我們</h1>
+                            <p></p>
+                        </div>
+                    </div>
+                    <ul class="mx-auto">
+                        <li>
+                            <a id="a1" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                        </li>
+                        <li>
+                            <a id="a2" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a id="a3" href="#"><i id="i1" class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a id="a4" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a id="a5" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="col-lg-6 p-0">
+                <img src="./img/螢幕擷取畫面 2022-06-14 204551.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white py-2 fixed-bottom">
+        2022 All Rights Reserved©
+    </footer>
+    <script type="text/javascript">
+        var active = document.getElementById('active');
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+            if (window.scrollY > 0) {
+                active.setAttribute("id", "active1");
+                active = document.getElementById('active1');
+            } else {
+                active.setAttribute("id", "active");
+                active = document.getElementById('active');
+            }
+        });
+    </script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

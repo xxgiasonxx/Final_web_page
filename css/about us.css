@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Microsoft JhengHei*/
+
+body {
+    background-color: #3f3f3f;
+}
+
+
+/*header*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: rgb(34, 37, 37);
+}
+
+header.sticky {
+    background: rgb(34, 37, 37);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+header .navigation li a:hover {
+    text-decoration: none;
+    color: #ff0157;
+    font-weight: 800;
+}
+
+#active1 {
+    color: #ff0157;
+}
+
+
+/*下面*/
+
+.h1about {
+    padding-left: 7ox;
+    border-left: 3px solid #ff0157;
+    width: 35%;
+}
+
+.col-lg-6 p {
+    padding-left: 13px;
+}
+
+.aboutus {
+    border-left: 3px solid #ff0157;
+    padding-left: 7px;
+}
+
+.row1 {
+    margin-top: 8%;
+}
+
+.col-lg-6 {
+    height: 50%;
+    width: 50%;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px soild rgba(255, 255, 255, 1);
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    border-top: 1px soild rgba(255, 255, 255, 1);
+}
+
+section ul {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    text-decoration: none;
+}
+
+section ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px;
+    text-decoration: none;
+}
+
+i {
+    text-decoration: none;
+}
+
+section ul li a {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+section ul li a:hover {
+    transform: translateY(-20px);
+    text-decoration: none;
+}
+
+section ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skew(45deg) translateX(150px);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#a1:hover {
+    color: #fff;
+    background-color: #1877f2;
+}
+
+#a2:hover {
+    color: #fff;
+    background-color: #00acee;
+}
+
+#a3:hover {
+    background-image: linear-gradient(155deg, #4C57A2 8%, #87439A 50%, #e02870 85%);
+}
+
+#i1 {
+    color: #fff;
+    z-index: 10000;
+}
+
+#a3:hover::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -60%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(rgba(246, 221, 132, 1) 15%, rgba(255, 45, 45, 0.65) 50%, rgba(0, 0, 0, 0) 70%);
+}
+
+#a4:hover {
+    background-color: #0A66C2;
+    color: #fff;
+}
+
+#a5:hover {
+    color: #fff;
+    background: linear-gradient(to bottom, #5FFC7B, #28D146);
+}
+
+section ul li a:hover::before {
+    transform: skew(45deg) translateX(-150px);
+    text-decoration: none;
+}
+footer{
+    background-color: rgb(34, 37, 37);
+}

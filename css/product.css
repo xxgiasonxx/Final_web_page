@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Microsoft JhengHei*/
+
+body {
+    background-color: rgb(248, 247, 248);
+}
+
+
+/*header*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: rgb(34, 37, 37);
+}
+
+header.sticky {
+    background: rgb(34, 37, 37);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+header .navigation li a:hover {
+    text-decoration: none;
+    color: #ff0157;
+    font-weight: 800;
+}
+
+#active1 {
+    color: #ff0157;
+}
+
+
+/*商品*/
+
+.col-lg-10 .row {
+    border-left: 1px solid #c0c0c0;
+    padding-left: 10px;
+}
+
+#b-border {
+    border-bottom: 3px solid #ff0157;
+    width: 7%;
+    margin: auto 46.5%;
+}
+
+.row {
+    margin: auto 15%;
+    margin-top: 10%;
+}
+
+.searchbar {
+    width: 200px;
+    height: 100%;
+    border-right: #000;
+}
+
+.row .col-lg-2 {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.sticky2 {
+    padding: 0;
+    top: 50px;
+}
+
+.row .col-lg-2 p {
+    border-bottom: 1px solid rgb(185, 185, 185);
+    font-size: 23px;
+    font-weight: 800;
+    user-select: none;
+    margin-top: 10px;
+}
+
+.ah {
+    margin-top: 10%;
+}
+
+a {
+    color: #000;
+    font-weight: 800;
+}
+
+a:hover {
+    color: #ff0157;
+    text-decoration: none;
+}
+
+#valuerange {
+    width: 50px;
+    height: 30px;
+}
+
+#icon {
+    height: 23px;
+    width: 23px;
+    margin-left: 10px;
+}
+
+.col-lg-10 {
+    margin-left: auto;
+}
+
+.col-lg-10 .row {
+    margin: 0 0;
+}
+
+.col-lg-10 .row .card {
+    margin: 5px 5px;
+}
+
+.long {
+    border: 1px solid;
+    border-image: linear-gradient(to right, #b6b6b6, #FFFFFF) 1;
+    width: 50%;
+    margin: 4% auto;
+}

@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Microsoft JhengHei*/
+
+body {
+    background-color: rgb(34, 37, 37);
+}
+
+
+/*header*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: rgb(34, 37, 37);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+header .navigation li a:hover {
+    text-decoration: none;
+    color: #ff0157;
+    font-weight: 800;
+}
+
+#active1 {
+    color: #ff0157;
+}
+
+
+/*banner*/
+
+#banner {
+    position: relative;
+    width: 100%;
+    min-width: 50vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.carousel {
+    height: 969px;
+    background-position: center center;
+}
+
+.carousel-inner {
+    height: 969px;
+    background-position: center center;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    margin-top: -200px;
+}
+
+.cc1 {
+    display: inline-block;
+    position: absolute;
+    top: 42%;
+    left: 55%;
+    text-align: start;
+}
+
+.cc2 {
+    display: inline-block;
+    position: absolute;
+    top: 42%;
+    left: 20%;
+    text-align: start;
+}
+
+.cc3 {
+    display: inline-block;
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    text-align: start;
+}
+
+.cc3 h1 {
+    font-size: 6em;
+    font-weight: 900;
+}
+
+.cc2 h1 {
+    font-size: 6em;
+    font-weight: 900;
+}
+
+.carousel .carousel-inner .carousel-item .cc1 h2 {
+    font-size: 6em;
+    font-weight: 900;
+}
+
+.btn1 {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 7px;
+}
+
+.btn1:hover {
+    letter-spacing: 5px;
+    color: #fff;
+    font-style: none;
+    text-decoration: none;
+}
+
+.btn2 {
+    font-size: 1em;
+    margin-left: 20px;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 7px;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid;
+    border-color: #fff;
+}
+
+.btn2:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: #fff;
+    letter-spacing: 5px;
+}
+
+
+/*About*/
+
+.about .row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .row .col40 {
+    position: relative;
+    width: 40%;
+}
+
+.about .row .col60 {
+    position: relative;
+    width: 60%;
+}
+
+
+/*文字*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.font-1 {
+    height: 80px;
+    width: 300px;
+    margin-top: 100px;
+}
+
+.borderfont {
+    border-left: 5px solid #BD0034;
+    width: 500px;
+    margin-left: 150px;
+    height: 230px;
+}
+
+svg {
+    margin-top: 10px;
+    display: block;
+    font: 15em 'Montserrat';
+    width: 300px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 50% 20%;
+    stroke-width: 3px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #4D163D;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #BD0034;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #FDB731;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+
+/*圖片*/
+
+#about-imgb {
+    height: 398px;
+    width: 370px;
+}
+
+#img1 {
+    height: 195px;
+    width: 300px;
+}
+
+.img-2 {
+    margin-right: 11%;
+}
+
+.img-1 {
+    margin-left: 20px;
+}
+
+.img-b {
+    margin-top: 10px;
+}
+
+.info-b {
+    margin-top: 28%;
+}
+
+#iconimg {
+    height: 60px;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+
+.info-big {
+    opacity: 0;
+    height: 398px;
+    width: 370px;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(25, 108, 179, .3);
+    top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.info-big svg {
+    margin-right: 300px;
+}
+
+.info-big p {
+    color: #fff;
+}
+
+.info-big:hover {
+    opacity: 1;
+}
+
+.info {
+    opacity: 0;
+    height: 195px;
+    width: 300px;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(25, 108, 179, .3);
+    top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.info p {
+    color: #fff;
+}
+
+.info:hover {
+    opacity: 1;
+}
+
+
+/*推薦商品*/
+
+.container-fluid {
+    background-image: url(../img/02.jpg);
+    height: 100vh;
+}
+
+#icon {
+    height: 23px;
+    width: 23px;
+    margin-left: 10px;
+}
+
+.flex-row {
+    margin-left: 41%;
+}
+
+
+/*文字*/
+
+.box h1 {
+    width: 30%;
+    border: 10px solid #840037;
+    background-color: #840037;
+    box-shadow: #000;
+    border-radius: 100px;
+    margin-left: 37%;
+    margin-top: 100px;
+}
